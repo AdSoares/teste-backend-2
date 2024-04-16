@@ -7,10 +7,10 @@ import CompaniesRepositoryInterface from '@domain/company/repositories/CompanyRe
 import CompaniesRepository from '@infra/repositories/companies/CompanyRepository';
 
 container.registerSingleton<EmployeesRepositoryInterface>(
-  EmployeesRepository,
+  'EmployeesRepository',
+  EmployeesRepository
 );
 
-container.registerSingleton<CompaniesRepositoryInterface>(
-  CompaniesRepository,
-);
-
+// container.registerSingleton<CompaniesRepositoryInterface>(
+//   CompaniesRepository,
+// );
