@@ -2,15 +2,15 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0.0",
-    "title": "API de gestão de funcionários",
-    "description": "Documentation of Employees boilerplate"
+    "title": "API de Gestão de funcionários",
+    "description": "Documentation of Employees API."
   },
   "host": "localhost:3333",
   "basePath": "/",
   "tags": [
     {
       "name": "Employees",
-      "description": "Employees endpoints"
+      "description": "Employees of endpoints"
     }
   ],
   "schemes": [
@@ -27,7 +27,6 @@
     "/": {
       "get": {
         "description": "",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -35,19 +34,69 @@
         }
       }
     },
-    "/employees/": {
+    "/employees/{id}": {
       "get": {
         "description": "",
         "parameters": [
           {
-            "name": "name",
-            "in": "query",
+            "name": "id",
+            "in": "path",
+            "required": true,
             "type": "string"
           }
         ],
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/employees/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "put": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "patch": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -59,7 +108,7 @@
       "properties": {
         "name": {
           "type": "string",
-          "employees": "Jhon Doe"
+          "example": "John Doe"
         }
       }
     },
@@ -68,7 +117,7 @@
       "properties": {
         "name": {
           "type": "string",
-          "employees": "Jhon Doe"
+          "example": "John Doe"
         }
       },
       "required": [

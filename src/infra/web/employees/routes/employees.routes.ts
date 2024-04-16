@@ -6,6 +6,10 @@ const employeesRouter = Router();
 
 const employeesController = new EmployeesController();
 
-employeesRouter.get('/', employeesController.index);
+employeesRouter.get('/:id', employeesController.get);
+employeesRouter.get('/', employeesController.list);
+employeesRouter.post('/', employeesController.create);
+employeesRouter.put('/', employeesController.update);
+employeesRouter.patch('/', employeesController.update);
 
 export default employeesRouter;
