@@ -34,7 +34,8 @@ class CreateEmployeeUseCase {
         ),
         input.department,
         input.jobTitle,
-        input.active
+        input.active,
+        input.companyId
     );
 
     await this.employeeRepository.create(employee);
@@ -55,7 +56,8 @@ class CreateEmployeeUseCase {
         number: employee.address.number,
         zip: employee.address.zip,
         city: employee.address.city
-      }
+      },
+      companyId: employee.companyId
     }
   }
 }

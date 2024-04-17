@@ -19,7 +19,8 @@ export default class EmployeeRepository implements EmployeeRepositoryInterface {
       city: entity.address.city,
       department: entity.department,
       jobTitle: entity.jobTitle,
-      active: entity.isActive()
+      active: entity.isActive(),
+      companyId: entity.companyId
     });
   }
 
@@ -38,7 +39,8 @@ export default class EmployeeRepository implements EmployeeRepositoryInterface {
         city: entity.address.city,
         department: entity.department,
         jobTitle: entity.jobTitle,
-        active: entity.isActive()
+        active: entity.isActive(),
+        companyId: entity.companyId
       },
       {
         where: {
@@ -65,13 +67,14 @@ export default class EmployeeRepository implements EmployeeRepositoryInterface {
       employeeModel.name,
       employeeModel.cpf,
       employeeModel.rg,
-      employeeModel.birthday.toString(),
+      employeeModel.birthday,
       employeeModel.email,
       employeeModel.phone,
       new Address(employeeModel.street, employeeModel.number, employeeModel.zipcode, employeeModel.city),
       employeeModel.department,
       employeeModel.jobTitle,
-      employeeModel.active);
+      employeeModel.active,
+      employeeModel.companyId);
     return employee;
   }
 
@@ -83,13 +86,14 @@ export default class EmployeeRepository implements EmployeeRepositoryInterface {
         e.name,
         e.cpf,
         e.rg,
-        e.birthday.toString(),
+        e.birthday,
         e.email,
         e.phone,
         new Address(e.street, e.number, e.zipcode, e.city),
         e.department,
         e.jobTitle,
-        e.active)
+        e.active,
+        e.companyId)
     });
 
     return employees;

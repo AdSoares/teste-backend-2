@@ -14,7 +14,8 @@ export interface InputUpdateEmployeeDTO {
       city: string;
       number: number;
       zip: string;
-    }
+    },
+    companyId: string
   }
   
   export interface OutputUpdateEmployeeDTO {
@@ -33,5 +34,6 @@ export interface InputUpdateEmployeeDTO {
       city: string;
       number: number;
       zip: string;
-    }
+    },
+    companyId: string
   }

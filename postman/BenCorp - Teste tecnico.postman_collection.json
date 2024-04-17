@@ -16,7 +16,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3333/employees/4f98fe65-883b-4186-8ac1-e99dd9b5fc59",
+							"raw": "http://localhost:3333/employees/5a795cc3-eea1-4ca5-aae3-e1447289ae1d",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -24,7 +24,7 @@
 							"port": "3333",
 							"path": [
 								"employees",
-								"4f98fe65-883b-4186-8ac1-e99dd9b5fc59"
+								"5a795cc3-eea1-4ca5-aae3-e1447289ae1d"
 							]
 						}
 					},
@@ -56,7 +56,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Employe 123\", \r\n    \"cpf\": \"33004726017\", \r\n    \"rg\": \"2737787428\", \r\n    \"birthday\": \"1990-01-01\", \r\n    \"email\": \"123@gmail.com\", \r\n    \"phone\": \"1199887766\", \r\n    \"department\": \"department\", \r\n    \"jobTitle\": \"job title\", \r\n    \"active\": true,\r\n    \"address\": {\r\n        \"street\": \"Street\",\r\n        \"city\": \"São Paulo\",\r\n        \"number\": 1000,\r\n        \"zip\": \"18000100\"\r\n    }\r\n}",
+							"raw": "{\r\n    \"name\": \"Employe 123\", \r\n    \"cpf\": \"33004726017\", \r\n    \"rg\": \"2737787428\", \r\n    \"birthday\": \"1990-01-01\", \r\n    \"email\": \"123@gmail.com\", \r\n    \"phone\": \"1199887766\", \r\n    \"department\": \"department\", \r\n    \"jobTitle\": \"job title\", \r\n    \"active\": true,\r\n    \"address\": {\r\n        \"street\": \"Street\",\r\n        \"city\": \"São Paulo\",\r\n        \"number\": 1000,\r\n        \"zip\": \"18000100\"\r\n    },\r\n    \"companyId\": \"4820b1e7-c85d-4fa9-8606-737a3dc83477\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -84,7 +84,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": \"4f98fe65-883b-4186-8ac1-e99dd9b5fc59\",\r\n    \"name\": \"Employe teste\",\r\n    \"cpf\": \"33004726017\",\r\n    \"rg\": \"2737787428\",\r\n    \"birthday\": \"1990-01-01\",\r\n    \"email\": \"123@gmail.com\",\r\n    \"phone\": \"1199887766\",\r\n    \"department\": \"department\",\r\n    \"jobTitle\": \"job title\",\r\n    \"active\": true,\r\n    \"address\": {\r\n        \"street\": \"Street\",\r\n        \"number\": 1000,\r\n        \"zip\": \"18000100\",\r\n        \"city\": \"São Paulo\"\r\n    }\r\n}",
+							"raw": "{\r\n    \"id\": \"5a795cc3-eea1-4ca5-aae3-e1447289ae1d\",\r\n    \"name\": \"Employe 123\",\r\n    \"cpf\": \"33004726017\",\r\n    \"rg\": \"2737787428\",\r\n    \"birthday\": \"1990-01-01\",\r\n    \"email\": \"123@gmail.com\",\r\n    \"phone\": \"1199887766\",\r\n    \"department\": \"department\",\r\n    \"jobTitle\": \"job title\",\r\n    \"active\": true,\r\n    \"address\": {\r\n        \"street\": \"Street\",\r\n        \"number\": 1000,\r\n        \"zip\": \"18000100\",\r\n        \"city\": \"São Paulo\"\r\n    },\r\n    \"companyId\": \"4820b1e7-c85d-4fa9-8606-737a3dc83477\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"

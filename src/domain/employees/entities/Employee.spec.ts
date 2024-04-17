@@ -42,7 +42,8 @@ const CreateEmployeeMissingProperty = (indexPropertyMissing: number): Employee =
         address,
         propertiesValues[EmployeeIndexProp.Department],
         propertiesValues[EmployeeIndexProp.JobTitle],
-        true)
+        true,
+        '4820b1e7-c85d-4fa9-8606-737a3dc83477')
 }
 
 describe('Employee unit tests', () => {
@@ -111,7 +112,7 @@ describe('Employee unit tests', () => {
 
     it('should throw an error if neither phone nor email is filled', () => {
       expect(() => {
-        new Employee('1', 'John Doe', '12345678901', '1234567', '1990-01-01', '', '', createAddress(), 'Department', 'Job Title', true);
+        new Employee('1', 'John Doe', '12345678901', '1234567', '1990-01-01', '', '', createAddress(), 'Department', 'Job Title', true, '4820b1e7-c85d-4fa9-8606-737a3dc83477');
       }).toThrowError('Phone or Email must be filled.');
     });
   });

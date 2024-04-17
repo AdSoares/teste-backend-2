@@ -16,7 +16,8 @@ type EmployeeDto = {
     city: string;
     number: number;
     zip: string;
-  }
+  },
+  companyId: string;
 }
 
 export interface OutputListEmployeeDTO {

@@ -13,7 +13,8 @@ export interface InputCreateEmployeeDTO {
       city: string;
       number: number;
       zip: string;
-    }
+    },
+    companyId: string
   }
   
   export interface OutputCreateEmployeeDTO {
@@ -32,5 +33,6 @@ export interface InputCreateEmployeeDTO {
       city: string;
       number: number;
       zip: string;
-    }
+    },
+    companyId: string
   }

@@ -6,7 +6,7 @@ import EmployeeModel from "../../../../infra/repositories/employees/EmployeeMode
 import FindEmployeeUseCase from "./FindEmployeeUseCase";
 
 const address = new Address("Street", 1000, "18000100", "São Paulo");
-const employee = new Employee("123", "Employe 123", "33004726017", "2737787428", "1990-01-01", "123@gmail.com", "1199887766", address, "department", "job title", true);
+const employee = new Employee("123", "Employe 123", "33004726017", "2737787428", "1990-01-01", "123@gmail.com", "1199887766", address, "department", "job title", true, "4820b1e7-c85d-4fa9-8606-737a3dc83477");
 
 const MockRepository = () => {
   return {
@@ -43,7 +43,8 @@ describe('Test find employee use case', () => {
         city: 'São Paulo',
         number: 1000,
         zip: '18000100',
-      }
+      },
+      companyId: '4820b1e7-c85d-4fa9-8606-737a3dc83477'
     }
 
     const result = await useCase.execute(input);

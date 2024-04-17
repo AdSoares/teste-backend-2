@@ -43,6 +43,7 @@ class OutputMapper {
                 zip: e.address.zip,
                 city: e.address.city,
             },
+            companyId: e.companyId
         })),
     }
   }

@@ -13,6 +13,7 @@ export default class Employee extends Entity {
   private _department: string = "";
   private _jobTitle: string = "";
   private _active: boolean = false;
+  private _companyId: string = "";
 
   constructor(id: string, 
     name: string, 
@@ -24,7 +25,8 @@ export default class Employee extends Entity {
     address: Address,
     department: string,
     jobTitle: string,
-    active: boolean) {
+    active: boolean,
+    companyId: string) {
       super();
       this._id = id
       this._name = name;
@@ -37,6 +39,7 @@ export default class Employee extends Entity {
       this._department = department;
       this._jobTitle = jobTitle;
       this._active = active;
+      this._companyId = companyId;
       this.validate();
   }
 
@@ -74,6 +77,10 @@ export default class Employee extends Entity {
 
   get jobTitle(): string {
     return this._jobTitle;
+  }
+
+  get companyId(): string {
+    return this._companyId;
   }
 
   private validateRequired(value: string, propertyName: string): void {

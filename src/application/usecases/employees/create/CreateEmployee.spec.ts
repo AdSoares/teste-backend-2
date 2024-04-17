@@ -17,7 +17,8 @@ const input = {
         city: 'São Paulo',
         number: 1000,
         zip: '18000100',
-    }
+    },
+    companyId: '4820b1e7-c85d-4fa9-8606-737a3dc83477'
 };
 
 const MockRepository = () => {
@@ -52,7 +53,8 @@ describe('Create Employee unit tests', () => {
             number: input.address.number,
             zip: input.address.zip,
             city: input.address.city
-        }   
+        },
+        companyId: input.companyId
     })
   });
 

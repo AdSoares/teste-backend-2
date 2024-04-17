@@ -33,7 +33,8 @@ class FindEmployeeUseCase {
         city: emplopyee.address.city,
         number: emplopyee.address.number,
         zip: emplopyee.address.zip
-      }
+      },
+      companyId: emplopyee.companyId
     }
   }
 }

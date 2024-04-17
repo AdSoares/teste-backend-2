@@ -7,6 +7,7 @@ import { Model, Table, PrimaryKey, Column } from 'sequelize-typescript';
 export default class EmployeeModel extends Model {
 
   @PrimaryKey
+  @Column
   declare id: string;
 
   @Column({ allowNull: false })
@@ -47,4 +48,7 @@ export default class EmployeeModel extends Model {
 
   @Column({ allowNull: false })
   declare active: boolean;
+
+  @Column({ allowNull: false })
+  declare companyId: string;
 }

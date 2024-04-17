@@ -18,5 +18,6 @@ export interface InputFindEmployeeDTO {
       city: string;
       number: number;
       zip: string;
-    };
+    },
+    companyId: string;
   }

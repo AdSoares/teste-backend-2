@@ -33,7 +33,8 @@ class UpdateEmployeeUseCase {
         ),
         input.department,
         input.jobTitle,
-        input.active
+        input.active,
+        input.companyId
     );
 
     await this.employeeRepository.update(employee);
@@ -54,7 +55,8 @@ class UpdateEmployeeUseCase {
         number: employee.address.number,
         zip: employee.address.zip,
         city: employee.address.city
-      }
+      },
+      companyId: employee.companyId
     }
   }
 }

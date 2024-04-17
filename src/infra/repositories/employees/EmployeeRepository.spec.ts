@@ -12,7 +12,7 @@ const createEmployee = (id: string, cpf: string, name: string) => {
       name = "Employe " + id;
     }
 
-    return new Employee(id, "Employe " + id, cpf, "2737787428", "1990-01-01", id + "@gmail.com", "1199887766", createAddress(), "department", "job title", true);
+    return new Employee(id, "Employe " + id, cpf, "2737787428", "1990-01-01", id + "@gmail.com", "1199887766", createAddress(), "department", "job title", true, "4820b1e7-c85d-4fa9-8606-737a3dc83477");
 }
 
 describe("Employee repository test", () => {
@@ -57,6 +57,7 @@ describe("Employee repository test", () => {
       department: employee.department,
       jobTitle: employee.jobTitle,
       active: employee.isActive(),
+      companyId: employee.companyId
     });
   });
 
@@ -87,6 +88,7 @@ describe("Employee repository test", () => {
       department: employee.department,
       jobTitle: employee.jobTitle,
       active: employeeUpdated.isActive(),
+      companyId: employeeUpdated.companyId
     });
   });
 
